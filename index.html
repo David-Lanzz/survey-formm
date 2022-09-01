@@ -13,20 +13,20 @@
     </div>
       <form id="survey-form">
         <div>
-        <label for="name">Name</label><br>
-        <input type="text" id="name"></input><br>
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" id="name" placeholder="Enter your name"></input><br>
       </div>
 <div>
-        <label for="email">Email</label><br>
-        <input type="email" id="email"></input><br>
+        <label for="email" id="email-label">Email</label><br>
+        <input type="email" id="email" placeholder="Enter your email"></input><br>
       </div>
       <div>
-        <label for="age">Age(optional)</label><br>
-        <input type="number" id="number"></input><br>
+        <label for="age" id="number-label">Age(optional)</label><br>
+        <input type="number" id="number" min="18" max="65" placeholder="Enter your age"></input><br>
       </div>
         <div>
           <p>Which option best describes your current role?</p>
-        <select id="role">
+        <select id="dropdown">
   <option disabled selected value>select current role</option>
 <option>Student</option>
 <option>Full Time Job</option>
@@ -54,23 +54,21 @@
 <div>
   <p>What would you like to see improved?<br>(check all that apply)</p>
   <input type="checkbox" value="frontend">Front-end-Projects</input><br>
-  <input type="checkbox" value="frontend">Back-end-Projects</input><br>
-  <input type="checkbox" value="frontend">Data Visualization</input><br>
-  <input type="checkbox" value="frontend">Challenges</input><br>
-  <input type="checkbox" value="frontend">Open Source Community</input><br>
-  <input type="checkbox" value="frontend">Gitter help rooms</input><br>
-  <input type="checkbox" value="frontend">Videos</input><br>
-  <input type="checkbox" value="frontend">City Meetups</input><br>
-  <input type="checkbox" value="frontend">Wiki</input><br>
-  <input type="checkbox" value="frontend">Forum</input><br>
-  <input type="checkbox" value="frontend">Additional Courses</input><br>
+  <input type="checkbox" value="backend">Back-end-Projects</input><br>
+  <input type="checkbox" value="DV">Data Visualization</input><br>
+  <input type="checkbox" value="challenges">Challenges</input><br>
+  <input type="checkbox" value="OSC">Open Source Community</input><br>
+  <input type="checkbox" value="GHR">Gitter help rooms</input><br>
+  <input type="checkbox" value="videos">Videos</input><br>
+  <input type="checkbox" value="cityM">City Meetups</input><br>
+  <input type="checkbox" value="wiki">Wiki</input><br>
+  <input type="checkbox" value="forum">Forum</input><br>
+  <input type="checkbox" value="additional courses">Additional Courses</input><br>
   <div>
     <p>Any comments or suggestions?</p><br>
-    <textarea placeholder="Enter your comment here..."></textarea>
+    <textarea placeholder="Enter your comment here..." name="additional comments:"></textarea>
   </div>
-  <input type="submit" value="Submit">
-
-</div>
+  <input type="submit" value="Submit" id="submit">
       </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
