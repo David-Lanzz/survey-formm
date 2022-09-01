@@ -9,24 +9,24 @@
   <body>
     <div>
       <h1 id="title">freeCodeCamp Survey Form</h1>
-      <p id="description">Thank you for taking the time to help us improve the platform </p>
+      <p id="description" class="para"><i>Thank you for taking the time to help us improve the platform</i></p>
     </div>
       <form id="survey-form">
         <div>
         <label for="name" id="name-label">Name</label><br>
-        <input type="text" id="name" placeholder="Enter your name"></input><br>
+        <input class="formtool" type="text" id="name" placeholder="Enter your name"></input><br>
       </div>
-<div>
+<div id="bio">
         <label for="email" id="email-label">Email</label><br>
-        <input type="email" id="email" placeholder="Enter your email"></input><br>
+        <input class="formtool" type="email" id="email" placeholder="Enter your email"></input><br>
       </div>
       <div>
         <label for="age" id="number-label">Age(optional)</label><br>
-        <input type="number" id="number" min="18" max="65" placeholder="Enter your age"></input><br>
+        <input class="formtool" type="number" id="number" min="18" max="65" placeholder="18-65"></input><br>
       </div>
         <div>
-          <p>Which option best describes your current role?</p>
-        <select id="dropdown">
+          <p class="para">Which option best describes your current role?</p>
+        <select class="formtool" id="dropdown">
   <option disabled selected value>select current role</option>
 <option>Student</option>
 <option>Full Time Job</option>
@@ -36,14 +36,14 @@
         </select>
       </div>
 <div>
-  <p>Would you recommend freeCodeCamp to a friend?</p>
+  <p class="para">Would you recommend freeCodeCamp to a friend?</p>
 <input type="radio" value="Definitely" name="recommendation-preference">Definitely</input><br>
 <input type="radio" value="Maybe" name="recommendation-preference">Maybe</input><br>
 <input type="radio" value="Not sure" name="recommendation-preference">Not sure</input><br>
 </div>
 <div>
-  <p>What is your favourite feature of freeCodeCamp?</p><br>
-<select>
+  <p class="para">What is your favourite feature of freeCodeCamp?</p><br>
+<select class="formtool">
   <option disabled selected value>select an option</option>
   <option value="challenges">Challenges</option>
   <option value="projects">Projects</option>
@@ -52,7 +52,7 @@
 </select>
 </div>
 <div>
-  <p>What would you like to see improved?<br>(check all that apply)</p>
+  <p class="para">What would you like to see improved?<br>(check all that apply)</p>
   <input type="checkbox" value="frontend">Front-end-Projects</input><br>
   <input type="checkbox" value="backend">Back-end-Projects</input><br>
   <input type="checkbox" value="DV">Data Visualization</input><br>
@@ -65,7 +65,7 @@
   <input type="checkbox" value="forum">Forum</input><br>
   <input type="checkbox" value="additional courses">Additional Courses</input><br>
   <div>
-    <p>Any comments or suggestions?</p><br>
+    <p class="para">Any comments or suggestions?</p><br>
     <textarea placeholder="Enter your comment here..." name="additional comments:"></textarea>
   </div>
   <input type="submit" value="Submit" id="submit">
