@@ -7,24 +7,70 @@
   </head>
 
   <body>
+    <div>
       <h1 id="title">freeCodeCamp Survey Form</h1>
       <p id="description">Thank you for taking the time to help us improve the platform </p>
+    </div>
       <form id="survey-form">
+        <div>
         <label for="name">Name</label><br>
         <input type="text" id="name"></input><br>
+      </div>
+<div>
         <label for="email">Email</label><br>
-        <input type="text" id="email"></input><br>
-        <label for="age">Age</label><br>
-        <input type="number" id="age"></input><br>
-        <p>Which option best describes your current role?</p>
+        <input type="email" id="email"></input><br>
+      </div>
+      <div>
+        <label for="age">Age(optional)</label><br>
+        <input type="number" id="number"></input><br>
+      </div>
+        <div>
+          <p>Which option best describes your current role?</p>
         <select id="role">
+  <option disabled selected value>select current role</option>
 <option>Student</option>
 <option>Full Time Job</option>
 <option>Full Time Learner</option>
 <option>Prefer Not to Say</option>
 <option>Other</option>
         </select>
-    <
+      </div>
+<div>
+  <p>Would you recommend freeCodeCamp to a friend?</p>
+<input type="radio" value="Definitely" name="recommendation-preference">Definitely</input><br>
+<input type="radio" value="Maybe" name="recommendation-preference">Maybe</input><br>
+<input type="radio" value="Not sure" name="recommendation-preference">Not sure</input><br>
+</div>
+<div>
+  <p>What is your favourite feature of freeCodeCamp?</p><br>
+<select>
+  <option disabled selected value>select an option</option>
+  <option value="challenges">Challenges</option>
+  <option value="projects">Projects</option>
+  <option value="community">Community</option>
+  <option value="open source">Open Source</option>
+</select>
+</div>
+<div>
+  <p>What would you like to see improved?<br>(check all that apply)</p>
+  <input type="checkbox" value="frontend">Front-end-Projects</input><br>
+  <input type="checkbox" value="frontend">Back-end-Projects</input><br>
+  <input type="checkbox" value="frontend">Data Visualization</input><br>
+  <input type="checkbox" value="frontend">Challenges</input><br>
+  <input type="checkbox" value="frontend">Open Source Community</input><br>
+  <input type="checkbox" value="frontend">Gitter help rooms</input><br>
+  <input type="checkbox" value="frontend">Videos</input><br>
+  <input type="checkbox" value="frontend">City Meetups</input><br>
+  <input type="checkbox" value="frontend">Wiki</input><br>
+  <input type="checkbox" value="frontend">Forum</input><br>
+  <input type="checkbox" value="frontend">Additional Courses</input><br>
+  <div>
+    <p>Any comments or suggestions?</p><br>
+    <textarea placeholder="Enter your comment here..."></textarea>
+  </div>
+  <input type="submit" value="Submit">
+
+</div>
       </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
